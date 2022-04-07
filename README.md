@@ -1,10 +1,16 @@
 # miniproject
 
-To compile using javac:
+To compile using javac windows:
 
 1. cd into src folder
 2. javac -cp jarFiles/*; *.java
 3. java -cp jarFiles/*; Main
+
+To compile using javac mac/linux 
+
+1. cd into src folder
+2. javac -cp "jarFiles/*": *.java
+3. java -cp "jarFiles/*": Main
 
 To run in intelliji
 
