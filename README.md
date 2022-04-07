@@ -6,7 +6,7 @@ To compile using javac windows:
 2. javac -cp jarFiles/*; *.java
 3. java -cp jarFiles/*; Main
 
-To compile using javac mac/linux 
+To compile using javac mac/unix 
 
 1. cd into src folder
 2. javac -cp "jarFiles/*": *.java
