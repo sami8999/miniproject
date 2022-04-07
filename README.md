@@ -1,4 +1,4 @@
-# miniproject1.0
+# miniproject
 
 To compile using javac:
 
