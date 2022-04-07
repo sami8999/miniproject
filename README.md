@@ -14,7 +14,7 @@ To run in intelliji
   - In guis/frames/loginFrame change the filepath of image files to commented versions (src/guis/images/portfolio.png).
   - Run the Main class
 
-#Notes about the repo:
+Notes about the repo:
 
 This repository consists of 4 different miniproject builds
 1. Javac compilable (latest up to date) 
