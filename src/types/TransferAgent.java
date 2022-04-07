@@ -125,20 +125,22 @@ public class TransferAgent {
 
     public void writeToDatabase(ArrayList<User> listOfUsers) throws IOException {
 
-        FileOutputStream fop=new FileOutputStream("objectFile.txt"); // src/objectFile.txt
+        FileOutputStream fop=new FileOutputStream("database.txt"); // src/database.txt
         ObjectOutputStream oos=new ObjectOutputStream(fop);
         oos.writeObject(listOfUsers);
         oos.close();
 
     }
 
+    //serialized list will only ever contain objects of type User,
+    //so we can safely ignore unchecked cast of deserialized object warning
+    @SuppressWarnings("unchecked")
     public ArrayList<User> readFromDatabase() throws IOException, ClassNotFoundException {
 
         try{
-            File file= new File("objectFile.txt"); // src/objectFile.txt
+            File file= new File("database.txt"); // src/database.txt
             FileInputStream fis=new FileInputStream(file);
             ObjectInputStream ois=new ObjectInputStream(fis);
-
             ArrayList<User> listOfUsers = (ArrayList<User>) ois.readObject();
             ois.close();
             return listOfUsers;

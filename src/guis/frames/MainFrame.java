@@ -1,9 +1,9 @@
-package guis.Frames;
+package guis.frames;
 
-import guis.Panels.BondsPanel;
-import guis.Panels.ForexPanel;
-import guis.Panels.PortfolioPanel;
-import guis.Panels.StocksPanel;
+import guis.panels.BondsPanel;
+import guis.panels.ForexPanel;
+import guis.panels.PortfolioPanel;
+import guis.panels.StocksPanel;
 import investmentTypes.Bond;
 import investmentTypes.CurrencyPair;
 import investmentTypes.Stock;

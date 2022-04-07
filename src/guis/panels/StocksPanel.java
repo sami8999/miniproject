@@ -1,7 +1,7 @@
-package guis.Panels;
+package guis.panels;
 
-import guis.Components.GraphPanel;
-import guis.Components.Slider;
+import guis.components.GraphPanel;
+import guis.components.Slider;
 import investmentTypes.Stock;
 import types.TransactionsException;
 import types.TransferAgent;

@@ -1,4 +1,4 @@
-package guis.Components;
+package guis.components;
 
 
 import investmentTypes.Investment;

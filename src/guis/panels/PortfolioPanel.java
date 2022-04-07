@@ -1,4 +1,4 @@
-package guis.Panels;
+package guis.panels;
 
 import types.User;
 

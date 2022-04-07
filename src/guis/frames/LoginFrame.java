@@ -1,4 +1,4 @@
-package guis.Frames;
+package guis.frames;
 
 import investmentTypes.Bond;
 import investmentTypes.CurrencyPair;
@@ -21,10 +21,10 @@ public class LoginFrame extends JFrame{
     JLabel pic;
 
     String[] list = {
-            "GUIS/Images/portfolio.png",//0 src/GUIS/Images/portfolio.png
-            "GUIS/Images/stocks.png",//1
-            "GUIS/Images/forex.png",//2
-            "GUIS/Images/bonds.png",//3
+            "guis/images/portfolio.png",//0 src/guis/images/portfolio.png
+            "guis/images/stocks.png",//1
+            "guis/images/forex.png",//2
+            "guis/images/bonds.png",//3
     };
 
     public LoginFrame(Stock appleStock, Stock amazonStock, Stock microsoftStock,

@@ -1,4 +1,4 @@
-package guis.Frames;
+package guis.frames;
 
 import investmentTypes.Bond;
 import investmentTypes.CurrencyPair;

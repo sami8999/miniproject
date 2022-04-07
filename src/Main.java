@@ -1,4 +1,4 @@
-import guis.Frames.LoginFrame;
+import guis.frames.LoginFrame;
 import investmentTypes.Bond;
 import investmentTypes.CurrencyPair;
 import types.YahooFinanceAPI;
