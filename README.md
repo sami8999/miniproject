@@ -8,7 +8,7 @@ To compile using javac:
 
 To run in intelliji
 
-1. file -> project structure -> modules -> + add all dependencies in jarFiles package
-2. In types/transferAgent change the root of database.txt to the commented version in the read + writeToDatabase methods
-3. In guis/frames/loginFrame change the filepath of image files to commented versions.
+1. file -> project structure -> modules -> + add all dependencies in jarFiles package // not neccessary 
+2. In types/transferAgent change the root of database.txt to the commented version ("src/database.txt") in the read + writeToDatabase methods
+3. In guis/frames/loginFrame change the filepath of image files to commented versions (src/guis/images/portfolio.png).
 4. Run the Main class
