@@ -125,7 +125,7 @@ public class TransferAgent {
 
     public void writeToDatabase(ArrayList<User> listOfUsers) throws IOException {
 
-        FileOutputStream fop=new FileOutputStream("src/objectFile.txt");
+        FileOutputStream fop=new FileOutputStream("objectFile.txt"); // src/objectFile.txt
         ObjectOutputStream oos=new ObjectOutputStream(fop);
         oos.writeObject(listOfUsers);
         oos.close();
@@ -135,7 +135,7 @@ public class TransferAgent {
     public ArrayList<User> readFromDatabase() throws IOException, ClassNotFoundException {
 
         try{
-            File file= new File("src/objectFile.txt");
+            File file= new File("objectFile.txt"); // src/objectFile.txt
             FileInputStream fis=new FileInputStream(file);
             ObjectInputStream ois=new ObjectInputStream(fis);
 

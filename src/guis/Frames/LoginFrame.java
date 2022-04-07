@@ -21,10 +21,10 @@ public class LoginFrame extends JFrame{
     JLabel pic;
 
     String[] list = {
-            "src/GUIS/Images/portfolio.png",//0
-            "src/GUIS/Images/stocks.png",//1
-            "src/GUIS/Images/forex.png",//2
-            "src/GUIS/Images/bonds.png",//3
+            "GUIS/Images/portfolio.png",//0 src/GUIS/Images/portfolio.png
+            "GUIS/Images/stocks.png",//1
+            "GUIS/Images/forex.png",//2
+            "GUIS/Images/bonds.png",//3
     };
 
     public LoginFrame(Stock appleStock, Stock amazonStock, Stock microsoftStock,
