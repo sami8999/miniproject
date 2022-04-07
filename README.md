@@ -20,6 +20,6 @@ This repository consists of 4 different miniproject builds
 1. Javac compilable (latest up to date) 
 2. Intelliji compilable (latest up to date) 
 3. Intelliji maven repository (old without refactoring)
-4. Simplw Intelliji maven repo  (simple build with no persistent storage and tightly coupled code) 
+4. Simple Intelliji maven repo  (simple build with no persistent storage and tightly coupled code) 
 
 It is interesting to note how OOP design principles have influenced the latest builds in comparison to the simple stateless build. For example we have made use of "favour composition over inheritance" and "program to interfaces" principles which makes our code easier to test and less coupled. 
