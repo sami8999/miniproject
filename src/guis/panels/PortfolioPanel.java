@@ -56,6 +56,7 @@ public class PortfolioPanel extends JPanel {
         String[] column ={"Investment","Date of purchase","Amount", "Market Price"};
 
         JTable table=new JTable(data,column);
+        table.setDefaultEditor(Object.class, null);
         JScrollPane scrollableTable=new JScrollPane(table);
         this.add(scrollableTable);
         scrollableTable.setBounds(50, 190, 775, 130);

@@ -4,10 +4,9 @@ import types.YahooFinanceAPI;
 import yahoofinance.Stock;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.Map;
 
-public class StockAttributes extends InvestmentAttributes implements Serializable {
+public class StockAttributes extends InvestmentAttributes {
     private int changePrice;
     public StockAttributes(String investmentName, Map<String, Stock> stocks) throws IOException {
         super(investmentName);

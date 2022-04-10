@@ -2,7 +2,9 @@ package investmentTypes;
 
 import investmentAttributes.InvestmentAttributes;
 
-public interface Investment  {
+import java.io.Serializable;
+
+public interface Investment extends Serializable {
 
     public void changeMarketPrice();
     public void buy(int number);

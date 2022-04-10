@@ -3,9 +3,7 @@ package investmentTypes;
 import investmentAttributes.BondAttributes;
 import investmentAttributes.InvestmentAttributes;
 
-import java.io.Serializable;
-
-public class Bond implements Investment, Serializable {
+public class Bond implements Investment{
 
     private final BondAttributes data;
 
