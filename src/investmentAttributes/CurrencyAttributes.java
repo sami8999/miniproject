@@ -2,14 +2,13 @@ package investmentAttributes;
 
 import yahoofinance.quotes.fx.FxQuote;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
-public class CurrencyAttributes extends InvestmentAttributes implements Serializable {
+public class CurrencyAttributes extends InvestmentAttributes {
 
     private final double margin;
 

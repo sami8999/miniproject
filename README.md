@@ -3,14 +3,14 @@
 To compile using javac windows:
 
 1. cd into src folder
-2. javac -cp jarFiles/*; *.java
-3. java -cp jarFiles/*; Main
+2. javac -d compiledClasses -cp jarFiles/*; *.java
+3. java -cp compiledClasses;jarFiles/*; Main
 
 To compile using javac mac/unix 
 
 1. cd into src folder
-2. javac -cp "jarFiles/*": *.java
-3. java -cp "jarFiles/*": Main
+2. javac -d "compiledClasses" -cp "jarFiles/*": *.java
+3. java -cp "compiledClasses":"jarFiles/*": Main
 
 To run in intelliji
 

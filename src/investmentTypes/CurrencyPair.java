@@ -7,7 +7,7 @@ import yahoofinance.quotes.fx.FxQuote;
 import java.io.Serializable;
 import java.util.Map;
 
-public class CurrencyPair implements Investment, Serializable {
+public class CurrencyPair implements Investment {
 
     private final CurrencyAttributes data;
 

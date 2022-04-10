@@ -19,30 +19,6 @@ public class TransferAgent {
 
     private TransferAgent(){}
 
-    public void syncInvestments(User user, Stock appleStock, Stock amazonStock, Stock microsoftStock,
-                                CurrencyPair eurUsd, CurrencyPair gbpUsd, CurrencyPair audUsd, Bond treasuryBond,
-                                Bond corporateBond, Bond mortgageBond){
-
-        for(Investment investment: user.getInvestments()){
-
-            switch (investment.getAttributes().getTicker()) {
-                case "AAPL" -> appleStock.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "AMZN" -> amazonStock.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "MSFT" -> microsoftStock.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "EURUSD=X" -> eurUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "GBPUSD=X" -> gbpUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "AUDUSD=X" -> audUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "US Treasury bond" -> treasuryBond.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "Vanguard Corporate bond" -> corporateBond.getAttributes().setAmount(investment.getAttributes().getAmount());
-                case "Subprime mortgage bond" -> mortgageBond.getAttributes().setAmount(investment.getAttributes().getAmount());
-            }
-
-        }
-
-
-    }
-
-
     public void buyInvestment(Investment investment, int amount, User user) throws TransactionsException {
 
         // exceptions
@@ -96,9 +72,6 @@ public class TransferAgent {
 
     public int findIndexOfUser(ArrayList<User> usersList, String username, String password ){
 
-//        for (User user: usersList) if (user.getUsername().equals(username) & user.getPassword().equals(password)) return user;
-//        return null;
-
         for (int i = 0; i<usersList.size(); i++){
 
             if(usersList.get(i).getUsername().equals(username) & usersList.get(i).getPassword().equals(password)){
@@ -146,6 +119,29 @@ public class TransferAgent {
             return listOfUsers;
         }
         catch(IOException e){return new ArrayList<User>();}
+
+
+    }
+
+    public void syncInvestments(User user, Stock appleStock, Stock amazonStock, Stock microsoftStock,
+                                CurrencyPair eurUsd, CurrencyPair gbpUsd, CurrencyPair audUsd, Bond treasuryBond,
+                                Bond corporateBond, Bond mortgageBond){
+
+        for(Investment investment: user.getInvestments()){
+
+            switch (investment.getAttributes().getTicker()) {
+                case "AAPL" -> appleStock.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "AMZN" -> amazonStock.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "MSFT" -> microsoftStock.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "EURUSD=X" -> eurUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "GBPUSD=X" -> gbpUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "AUDUSD=X" -> audUsd.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "US Treasury bond" -> treasuryBond.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "Vanguard Corporate bond" -> corporateBond.getAttributes().setAmount(investment.getAttributes().getAmount());
+                case "Subprime mortgage bond" -> mortgageBond.getAttributes().setAmount(investment.getAttributes().getAmount());
+            }
+
+        }
 
 
     }

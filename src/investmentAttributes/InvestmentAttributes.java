@@ -27,7 +27,7 @@ public abstract class InvestmentAttributes implements Serializable {
         return this.ticker;
     }
     public String getDateOfPurchase(){
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         return dateFormat.format(this.dateOfPurchase);
     }
     public int getAmount(){
