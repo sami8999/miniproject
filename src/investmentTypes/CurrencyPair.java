@@ -3,8 +3,6 @@ package investmentTypes;
 import investmentAttributes.CurrencyAttributes;
 import investmentAttributes.InvestmentAttributes;
 import yahoofinance.quotes.fx.FxQuote;
-
-import java.io.Serializable;
 import java.util.Map;
 
 public class CurrencyPair implements Investment {

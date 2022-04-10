@@ -2,7 +2,6 @@ package investmentTypes;
 import investmentAttributes.InvestmentAttributes;
 import investmentAttributes.StockAttributes;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.Map;
 
 public class Stock implements Investment {
